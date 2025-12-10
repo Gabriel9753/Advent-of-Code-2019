@@ -1,0 +1,46 @@
+# Advent of Code 2025
+
+A collection of my solutions to the [Advent of Code 2019](https://adventofcode.com/2019) puzzles solved in Python.
+
+- For downloading the input data and also creating a base template for the solution files, you have to run the `src/main.py` script.
+- The script will create a folder for the `current day` and download the input data into the folder.
+- For downloading the input data for a specific day, you can run the script with the day number as argument: `src/main.py 1`
+- If you want another code as baseline for the daily tasks, you can modify the `src/template.py`!
+
+For downloading your unique input data, you have to create a .env file in the root directory of the project and add the following line to it:
+
+```bash
+AOC_SESSION = <your unique session cookie>
+```
+
+How to get your unique session cookie? [Click here](https://github.com/wimglenn/advent-of-code-wim/issues/1)
+
+# Solutions
+
+| Day | Part 1 | Part 2 |
+| --- | ------ | ------ |
+| [1](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_01/solution.py)   | - | - |
+| [2](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_02/solution.py)   | - | - |
+| [3](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_03/solution.py)   | - | - |
+| [4](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_04/solution.py)   | - | - |
+| [5](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_05/solution.py)   | - | - |
+| [6](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_06/solution.py)   | - | - |
+| [7](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_07/solution.py)   | - | - |
+| [8](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_08/solution.py)   | - | - |
+| [9](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_09/solution.py)   | - | - |
+| [10](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_10/solution.py)   | - | - |
+| [11](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_11/solution.py)   | - | - |
+| [12](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_12/solution.py)   | - | - |
+| [13](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_13/solution.py)   | - | - |
+| [14](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_14/solution.py)   | - | - |
+| [15](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_15/solution.py)   | - | - |
+| [16](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_16/solution.py)   | - | - |
+| [17](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_17/solution.py)   | - | - |
+| [18](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_18/solution.py)   | - | - |
+| [19](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_19/solution.py)   | - | - |
+| [20](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_20/solution.py)   | - | - |
+| [21](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_21/solution.py)   | - | - |
+| [22](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_22/solution.py)   | - | - |
+| [23](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_23/solution.py)   | - | - |
+| [24](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_24/solution.py)   | - | - |
+| [25](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_25/solution.py)   | - | - |

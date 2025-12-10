@@ -1,0 +1,69 @@
+[project]
+name = "aoc_2025"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "bandit>=1.9.2",
+    "jupyter>=1.1.1",
+    "loguru>=0.7.3",
+    "markdownify>=1.2.2",
+    "matplotlib>=3.10.7",
+    "more-itertools>=10.8.0",
+    "numpy>=2.3.5",
+    "pandas>=2.3.3",
+    "python-dotenv>=1.2.1",
+    "rich>=14.2.0",
+    "ruff>=0.14.7",
+    "scikit-learn>=1.7.2",
+    "seaborn>=0.13.2",
+    "shapely>=2.1.2",
+    "tqdm>=4.67.1",
+    "z3>=0.2.0",
+]
+
+# ruff settings (https://docs.astral.sh/ruff/)
+[tool.ruff]
+# Set the maximum line length to 120.
+line-length = 120
+
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+]
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.lint]
+ignore = ["E402", "W293", "F405", "F401"]
+
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
