@@ -20,7 +20,7 @@ How to get your unique session cookie? [Click here](https://github.com/wimglenn/
 | Day | Part 1 | Part 2 |
 | --- | ------ | ------ |
 | [1](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_01/solution.py)   | - | - |
-| [2](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_02/solution.py)   | - | - |
+| [2](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_02/solution.py)   | 0.000000      | 0.006215      |
 | [3](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_03/solution.py)   | - | - |
 | [4](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_04/solution.py)   | - | - |
 | [5](https://github.com/Gabriel9753/Advent-of-Code-2019/blob/main/src/day_05/solution.py)   | - | - |

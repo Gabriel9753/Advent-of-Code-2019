@@ -32,18 +32,56 @@ images_path = os.path.join(par_dir, "images")
 
 @timer(return_time=True)
 def preprocess_input(input_data):
-    return input_data.splitlines()
+    return list(map(int, input_data.split(",")))
 
 
 @timer(return_time=True)
 def task1(day_input):
-    print(day_input)
-    return -1
+    day_input[1] = 12
+    day_input[2] = 2
+    for i in range(0, len(day_input), 4):
+        opcode = day_input[i]
+
+        if opcode == 99 or opcode not in (1, 2, 99):
+            break
+
+        in1 = day_input[day_input[i + 1]]
+        in2 = day_input[day_input[i + 2]]
+        out = day_input[i + 3]
+
+        day_input[out] = in1 + in2 if opcode == 1 else in1 * in2
+    return day_input[0]
 
 
 @timer(return_time=True)
 def task2(day_input):
-    return -1
+    target = 19690720
+    for noun, verb in permutations(range(100), 2):
+        program = day_input.copy()
+        program[1] = noun
+        program[2] = verb
+        instruction_pointer = 0
+        while instruction_pointer < len(program):
+            opcode = program[instruction_pointer]
+
+            if opcode == 99:
+                break
+
+            in1 = program[program[instruction_pointer + 1]]
+            in2 = program[program[instruction_pointer + 2]]
+            out = program[instruction_pointer + 3]
+
+            match opcode:
+                case 1:
+                    program[out] = in1 + in2
+                    instruction_pointer += 4
+                case 2:
+                    program[out] = in1 * in2
+                    instruction_pointer += 4
+                case _:
+                    break
+        if program[0] == target:
+            return 100 * noun + verb
 
 
 def main(args):
@@ -53,7 +91,7 @@ def main(args):
         day_input = load_input(os.path.join(cur_dir, "input.txt"))
 
     day_input, t = preprocess_input(day_input)
-    result_task1, time_task1 = task1(day_input)
+    result_task1, time_task1 = task1(day_input.copy())
     result_task2, time_task2 = task2(day_input)
 
     print(f"\nDay {cur_day}")

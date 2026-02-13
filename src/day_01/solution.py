@@ -37,7 +37,7 @@ def preprocess_input(input_data):
 
 @timer(return_time=True)
 def task1(day_input):
-    return np.sum(day_input//3-2)
+    return np.sum(day_input // 3 - 2)
 
 
 @timer(return_time=True)
@@ -45,11 +45,11 @@ def task2(day_input):
     fuels = []
     for fuel in day_input:
         while True:
-            fuel = fuel //3-2
+            fuel = fuel // 3 - 2
             if fuel <= 0:
                 break
             fuels.append(fuel)
-            
+
     return np.sum(fuels)
 
 
